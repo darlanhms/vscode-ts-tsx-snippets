@@ -1,0 +1,25 @@
+{
+	"Props": {
+		"prefix": "propsf",
+		"body": [
+			"interface Props {",
+			"\t$1",
+			"}"
+		],
+		"description": "create the props interface"
+	},
+	"Create react FC": {
+		"prefix": "fc",
+		"body": [
+			"const ${1:ComponentName}:React.FC<${2:Props}> = (${3:props}) => {",
+			"\t$4",
+			"\treturn (",
+			"\t\t$5",
+			"\t)",
+			"}",
+			"\n",
+			"export default $1"
+		],
+		"description": "Create a basic react function component"
+	}
+}

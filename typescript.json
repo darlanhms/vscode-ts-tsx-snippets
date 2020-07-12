@@ -1,0 +1,22 @@
+{
+	"Create simple route": {
+		"prefix": "route",
+		"body": [
+			"export const ${1:name} = async (req: Req, res: Res): Promise<any> => {",
+			"\t$2",
+			"}"
+		],
+		"description": "Creates a simple route on express"
+	},
+	"Create simple then": {
+		"prefix": "then",
+		"body": [
+			".then(${1:result} => {",
+				"\t$2",
+			"}).catch(${3:err} => {",
+				"\t$4",
+			"})"
+		],
+		"description": "Creates a then to finish promises"
+	}
+}
